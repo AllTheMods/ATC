@@ -1,0 +1,16 @@
+Alle The Creators dummy Changelog
+
+
+Config Changes
+- ...
+
+Added Mods
+- ...
+
+Removed Mods
+- ...
+
+Updated Mods
+- ...
+
+
