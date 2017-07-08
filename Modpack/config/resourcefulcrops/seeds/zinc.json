@@ -1,0 +1,25 @@
+{
+  "name": "zinc",
+  "tier": 1,
+  "craftAmount": 4,
+  "color": "#C0B0B6",
+  "inputOre": "ingotZinc",
+  "outputs": [
+    {
+      "item": {
+        "id": {
+          "domain": "techreborn",
+          "path": "ingot"
+        },
+        "amount": 4,
+        "meta": 18
+      },
+      "shape": "DEFAULT"
+    }
+  ],
+  "growthRequirement": {
+    "minLight": 7,
+    "maxLight": 15,
+    "requiredState": null
+  }
+}

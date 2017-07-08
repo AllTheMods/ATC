@@ -1,0 +1,25 @@
+{
+  "name": "copper",
+  "tier": 1,
+  "craftAmount": 4,
+  "color": "#CC6633",
+  "inputOre": "ingotCopper",
+  "outputs": [
+    {
+      "item": {
+        "id": {
+          "domain": "forestry",
+          "path": "ingot_copper"
+        },
+        "amount": 4,
+        "meta": 0
+      },
+      "shape": "DEFAULT"
+    }
+  ],
+  "growthRequirement": {
+    "minLight": 7,
+    "maxLight": 15,
+    "requiredState": null
+  }
+}
