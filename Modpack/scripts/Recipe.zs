@@ -85,10 +85,6 @@ recipes.remove(<forestry:gear_bronze>);
 recipes.remove(<forestry:gear_copper>);
 recipes.remove(<forestry:gear_tin>);
 
-<ore:gearBronze>.remove(<forestry:gear_bronze>);
-<ore:gearCopper>.remove(<forestry:gear_copper>);
-<ore:gearTin>.remove(<forestry:gear_tin>);
-
 var planks = <ore:plankWood>;
 var strings = <ore:string>;
 var marble = <ore:stoneMarble>;
