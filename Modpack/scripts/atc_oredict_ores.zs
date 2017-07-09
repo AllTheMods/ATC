@@ -132,7 +132,7 @@ print(" ========================================================== ");
 	<ore:oreDimensional>.addItems([	
 		<rftools:dimensional_shard_ore>,
 		<rftools:dimensional_shard_ore:1>,
-		<rftools:dimensional_shard_ore:2
+		<rftools:dimensional_shard_ore:2>
 	]);
 	recipes.addShapeless("dimensionalconvert", <rftools:dimensional_shard_ore>, [<ore:oreDimensional>, <ore:oreDimensional>]);
 
@@ -168,7 +168,7 @@ print(" ========================================================== ");
 	
 	//MANA-MITHRIL
 	var mithrilOres = [
-		<nmmlib:ore:6>
+		<nmmlib:ore:6>,
 		<thermalfoundation:ore:8>
 	] as IItemStack[];
 	
@@ -210,7 +210,7 @@ print(" ========================================================== ");
 		<biomesoplenty:gem_ore:2>,
 		<techreborn:ore:10>
 		]);
-	recipes.addShapeless("peridotconvert", <>*2, [<ore:>, <ore:>]);
+	recipes.addShapeless("peridotconvert", <techreborn:ore:10>*2, [<ore:orePeridot>, <ore:orePeridot>]);
 
 	
 	//GEM RUBY
@@ -218,7 +218,7 @@ print(" ========================================================== ");
 		<biomesoplenty:gem_ore:1>,
 		<techreborn:ore:2>
 		]);
-	recipes.addShapeless("rubyconvert", <>*2, [<ore:>, <ore:>]);
+	recipes.addShapeless("rubyconvert", <techreborn:ore:2>*2, [<ore:oreRuby>, <ore:oreRuby>]);
 
 	
 	//GEM SAPPHIRE
@@ -226,5 +226,5 @@ print(" ========================================================== ");
 		<biomesoplenty:gem_ore:6>,
 		<techreborn:ore:3>
 		]);
-	recipes.addShapeless("sapphireconvert", <>*2, [<ore:>, <ore:>]);
+	recipes.addShapeless("sapphireconvert", <techreborn:ore:3>*2, [<ore:oreSapphire>, <ore:oreSapphire>]);
 
