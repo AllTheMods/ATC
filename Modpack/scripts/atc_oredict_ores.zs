@@ -134,7 +134,7 @@ print(" ========================================================== ");
 		<rftools:dimensional_shard_ore:1>,
 		<rftools:dimensional_shard_ore:2>
 	]);
-	recipes.addShapeless("dimensionalconvert", <rftools:dimensional_shard_ore>, [<ore:oreDimensional>, <ore:oreDimensional>]);
+	recipes.addShapeless("dimensionalconvert", <rftools:dimensional_shard_ore>*2, [<ore:oreDimensional>, <ore:oreDimensional>]);
 
 	
 	//URANIUM/YELLORIUM
@@ -146,7 +146,7 @@ print(" ========================================================== ");
 	<ore:oreYellorium>.addItems(uraniumOres);
 	<ore:oreUranium>.addItems(uraniumOres);
 	
-	recipes.addShapeless("uraniumconvert", <bigreactors:brore>, [<ore:oreUranium>, <ore:oreUranium>]);
+	recipes.addShapeless("uraniumconvert", <bigreactors:brore>*2, [<ore:oreUranium>, <ore:oreUranium>]);
 	
 
 	//REDSTONE
