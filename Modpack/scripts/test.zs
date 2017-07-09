@@ -1,28 +1,3 @@
-recipes.remove(<modularity:aqueousaccumulator:*>);
-recipes.remove(<modularity:aqueousdissipator:*>);
-recipes.remove(<modularity:augment:*>);
-recipes.remove(<modularity:cable:*>);
-recipes.remove(<modularity:capacitor:*>);
-recipes.remove(<modularity:circuit:*>);
-recipes.remove(<modularity:crafting:*>);
-recipes.remove(<modularity:energy_cell:*>);
-recipes.remove(<modularity:energy_cell_frame:*>);
-recipes.remove(<modularity:forcefield:*>);
-recipes.remove(<modularity:furnace:*>);
-recipes.remove(<modularity:hardened_glass:*>);
-recipes.remove(<modularity:induction:*>);
-recipes.remove(<modularity:machine_frame:*>);
-recipes.remove(<modularity:magmacrucible:*>);
-recipes.remove(<modularity:miscdust:*>);
-recipes.remove(<modularity:mobdrop:*>);
-recipes.remove(<modularity:pulverizer:*>);
-recipes.remove(<modularity:solar_panel:*>);
-recipes.remove(<modularity:tank_basic:*>);
-recipes.remove(<modularity:tank_creative:*>);
-recipes.remove(<modularity:tank_hardened:*>);
-recipes.remove(<modularity:tank_reinforced:*>);
-recipes.remove(<modularity:tank_resonant:*>);
-recipes.remove(<modularity:tesseract_frame:*>);
 recipes.remove(<nmmlib:axe_bronze:*>);
 recipes.remove(<nmmlib:axe_copper:*>);
 recipes.remove(<nmmlib:axe_electrum:*>);
@@ -113,7 +88,27 @@ recipes.remove(<nmmlib:sword_silver:*>);
 recipes.remove(<nmmlib:sword_tin:*>);
 
 var planks = <ore:plankWood>;
+var strings = <ore:string>;
+var marble = <ore:stoneMarble>;
 
-recipes.addShaped("cropstake", <rustic:crop_stake:0> * 1,     [[null, null, planks],
-                                                [null, planks, null],
-                                                [planks, null, null]]);
+
+recipes.removeShaped(<rustic:crop_stake:0>);
+recipes.addShaped("cropstake", <rustic:crop_stake:0> * 3,     [[null, null, planks],
+                                               		  		  [null, planks, null],
+                                               				  [planks, null, null]]);
+
+
+recipes.removeShaped(<waterstrainer:net>);
+recipes.addShaped("net", <waterstrainer:net> * 1,     	[[null, null, strings],
+                                               		  	[null, strings, null],
+                                               			[strings, null, null]]);
+
+recipes.removeShaped(<stevescarts:modulecomponents:43>);
+recipes.addShaped("fuse", <stevescarts:modulecomponents:43> * 12,     	[[strings, null, null],
+                                               		  					[null, strings, null],
+                                               							[null, null, strings]]);
+
+recipes.removeShaped(<quark:marble:1>);
+recipes.addShaped("marble", <quark:marble:1> * 9,     	[[marble, marble, marble],
+                                               		  	[marble, marble, marble],
+                                               			[marble, marble, marble]]);
