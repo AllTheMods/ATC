@@ -7,6 +7,8 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 print(" =================== ATC Misc =================== ");
 print(" ================================================ ");
 
+//https://github.com/AllTheMods/ATC/blob/master/Modpack/scripts/atc_misc.zs
+
 //====== Variables ======
 //
 	var planks = <ore:plankWood>;
