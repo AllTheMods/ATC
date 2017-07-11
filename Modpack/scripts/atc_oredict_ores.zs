@@ -7,6 +7,8 @@ import crafttweaker.oredict.IOreDictEntry;
 print(" =================== ATC OreDict (ores) =================== ");
 print(" ========================================================== ");
 
+// https://github.com/AllTheMods/ATC/blob/master/Modpack/scripts/atc_oredict_ores.zs
+
 //====== Variables ======
 //
 
