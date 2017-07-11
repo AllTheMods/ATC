@@ -7,6 +7,8 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 print(" =================== ATC OreDict (wood) =================== ");
 print(" ========================================================== ");
 
+// https://github.com/AllTheMods/ATC/edit/master/Modpack/scripts/atc_oredict_wood.zs
+
 //====== Variables ======
 //
 
@@ -258,5 +260,42 @@ print(" ========================================================== ");
 	recipes.addShapeless("chestoredict1", <minecraft:chest>, [Chest]);
 	recipes.addShapeless("bedoredict1", <minecraft:bed>, [<ore:bed>]);
 	recipes.addShapeless("wooddoororedict1", <minecraft:wooden_door>, [Door]);
-	
+
+
+//====== Quark vs Rustic colored planks ======
+// instead of changing any recipes just add an option for them to be "convert" crafted to one another
+//
+	recipes.addShapeless("colorplank001", <quark:stained_planks:0>, [<rustic:painted_wood_white:0>]);
+	recipes.addShapeless("colorplank002", <quark:stained_planks:1>, [<rustic:painted_wood_orange:0>]);
+	recipes.addShapeless("colorplank003", <quark:stained_planks:10>, [<rustic:painted_wood_purple:0>]);
+	recipes.addShapeless("colorplank004", <quark:stained_planks:11>, [<rustic:painted_wood_blue:0>]);
+	recipes.addShapeless("colorplank005", <quark:stained_planks:12>, [<rustic:painted_wood_brown:0>]);
+	recipes.addShapeless("colorplank006", <quark:stained_planks:13>, [<rustic:painted_wood_green:0>]);
+	recipes.addShapeless("colorplank007", <quark:stained_planks:14>, [<rustic:painted_wood_red:0>]);
+	recipes.addShapeless("colorplank008", <quark:stained_planks:15>, [<rustic:painted_wood_black:0>]);
+	recipes.addShapeless("colorplank009", <quark:stained_planks:2>, [<rustic:painted_wood_magenta:0>]);
+	recipes.addShapeless("colorplank010", <quark:stained_planks:3>, [<rustic:painted_wood_light_blue:0>]);
+	recipes.addShapeless("colorplank011", <quark:stained_planks:4>, [<rustic:painted_wood_yellow:0>]);
+	recipes.addShapeless("colorplank012", <quark:stained_planks:5>, [<rustic:painted_wood_lime:0>]);
+	recipes.addShapeless("colorplank013", <quark:stained_planks:6>, [<rustic:painted_wood_pink:0>]);
+	recipes.addShapeless("colorplank014", <quark:stained_planks:7>, [<rustic:painted_wood_gray:0>]);
+	recipes.addShapeless("colorplank015", <quark:stained_planks:8>, [<rustic:painted_wood_silver:0>]);
+	recipes.addShapeless("colorplank016", <quark:stained_planks:9>, [<rustic:painted_wood_cyan:0>]);
+
+	recipes.addShapeless("colorplank201", <rustic:painted_wood_black:0>, [<quark:stained_planks:15>]);
+	recipes.addShapeless("colorplank202", <rustic:painted_wood_blue:0>, [<quark:stained_planks:11>]);
+	recipes.addShapeless("colorplank203", <rustic:painted_wood_brown:0>, [<quark:stained_planks:12>]);
+	recipes.addShapeless("colorplank204", <rustic:painted_wood_cyan:0>, [<quark:stained_planks:9>]);
+	recipes.addShapeless("colorplank205", <rustic:painted_wood_gray:0>, [<quark:stained_planks:7>]);
+	recipes.addShapeless("colorplank206", <rustic:painted_wood_green:0>, [<quark:stained_planks:13>]);
+	recipes.addShapeless("colorplank207", <rustic:painted_wood_light_blue:0>, [<quark:stained_planks:3>]);
+	recipes.addShapeless("colorplank208", <rustic:painted_wood_lime:0>, [<quark:stained_planks:5>]);
+	recipes.addShapeless("colorplank209", <rustic:painted_wood_magenta:0>, [<quark:stained_planks:2>]);
+	recipes.addShapeless("colorplank210", <rustic:painted_wood_orange:0>, [<quark:stained_planks:1>]);
+	recipes.addShapeless("colorplank211", <rustic:painted_wood_pink:0>, [<quark:stained_planks:6>]);
+	recipes.addShapeless("colorplank212", <rustic:painted_wood_purple:0>, [<quark:stained_planks:10>]);
+	recipes.addShapeless("colorplank213", <rustic:painted_wood_red:0>, [<quark:stained_planks:14>]);
+	recipes.addShapeless("colorplank214", <rustic:painted_wood_silver:0>, [<quark:stained_planks:8>]);
+	recipes.addShapeless("colorplank215", <rustic:painted_wood_white:0>, [<quark:stained_planks:0>]);
+	recipes.addShapeless("colorplank216", <rustic:painted_wood_yellow:0>, [<quark:stained_planks:4>]);
 	
