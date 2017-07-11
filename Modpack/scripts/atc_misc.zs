@@ -186,7 +186,7 @@ print(" ================================================ ");
 		<ore:dyeWhite>
 	] as IOreDictEntry[];
 
-	for dyecolor in dyeoredicts { genericdye.addAll(dyeColor); }
+	for x in dyeoredicts { genericdye.addAll(x); }
 
 
 //====== Chisel / Garden Trowel ======
