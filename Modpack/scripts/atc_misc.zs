@@ -187,6 +187,29 @@ print(" ================================================ ");
 	] as IOreDictEntry[];
 
 	for x in dyeoredicts { genericdye.addAll(x); }
+	
+	//Conversions
+	  recipe.addShapeless("dyeconvert00", <minecraft:dye:0>  * 3, [ <ore:dyeBlack>,     <ore:dyeBlack>,     <ore:dyeBlack> ]);     //Ink Sac
+	  recipe.addShapeless("dyeconvert01", <minecraft:dye:1>  * 3, [ <ore:dyeRed>,       <ore:dyeRed>,       <ore:dyeRed> ]);       //Rose Red
+	  recipe.addShapeless("dyeconvert02", <minecraft:dye:2>  * 3, [ <ore:dyeGreen>,     <ore:dyeGreen>,     <ore:dyeGreen> ]);     //Cactus Green
+	//recipe.addShapeless("dyeconvert03", <minecraft:dye:3>  * 3, [ <ore:dyeBrown>,     <ore:dyeBrown>,     <ore:dyeBrown> ]);     //Cocoa Beans
+	//recipe.addShapeless("dyeconvert04", <minecraft:dye:4>  * 3, [ <ore:dyeBlue>,      <ore:dyeBlue>,      <ore:dyeBlue> ]);      //Lapis Lazuli
+	  recipe.addShapeless("dyeconvert05", <minecraft:dye:5>  * 3, [ <ore:dyePurple>,    <ore:dyePurple>,    <ore:dyePurple> ]);    //Purple Dye
+	  recipe.addShapeless("dyeconvert06", <minecraft:dye:6>  * 3, [ <ore:dyeCyan>,      <ore:dyeCyan>,      <ore:dyeCyan> ]);      //Cyan Dye
+	  recipe.addShapeless("dyeconvert07", <minecraft:dye:7>  * 3, [ <ore:dyeLightGray>, <ore:dyeLightGray>, <ore:dyeLightGray> ]); //Light Gray Dye
+	  recipe.addShapeless("dyeconvert08", <minecraft:dye:8>  * 3, [ <ore:dyeGray>,      <ore:dyeGray>,      <ore:dyeGray> ]);      //Gray Dye
+	  recipe.addShapeless("dyeconvert09", <minecraft:dye:9>  * 3, [ <ore:dyePink>,      <ore:dyePink>,      <ore:dyePink> ]);      //Pink Dye
+	  recipe.addShapeless("dyeconvert10", <minecraft:dye:10> * 3, [ <ore:dyeLime>,      <ore:dyeLime>,      <ore:dyeLime> ]);      //Lime Dye
+	  recipe.addShapeless("dyeconvert11", <minecraft:dye:11> * 3, [ <ore:dyeYellow>,    <ore:dyeYellow>,    <ore:dyeYellow> ]);    //Dandelion Yellow
+	  recipe.addShapeless("dyeconvert12", <minecraft:dye:12> * 3, [ <ore:dyeLightBlue>, <ore:dyeLightBlue>, <ore:dyeLightBlue> ]); //Light Blue Dye
+	  recipe.addShapeless("dyeconvert13", <minecraft:dye:13> * 3, [ <ore:dyeMagenta>,   <ore:dyeMagenta>,   <ore:dyeMagenta> ]);   //Magenta Dye
+	  recipe.addShapeless("dyeconvert14", <minecraft:dye:14> * 3, [ <ore:dyeOrange>,    <ore:dyeOrange>,    <ore:dyeOrange> ]);    //Orange Dye
+	//recipe.addShapeless("dyeconvert15", <minecraft:dye:15> * 3, [ <ore:dyeWhite>,     <ore:dyeWhite>,     <ore:dyeWhite> ]);     //Bone Meal
+	
+	//Because vanilla could just make 3 more "dye" items? >_>
+	recipe.addShapeless("dyeconvert15bop", <biomesoplenty:white_dye> * 3, [ <ore:dyeWhite>, <ore:dyeWhite>, <ore:dyeWhite> ]); //BoP Dye
+	recipe.addShapeless("dyeconvert04bop", <biomesoplenty:blue_dye>  * 3, [ <ore:dyeBlue>,  <ore:dyeBlue>,  <ore:dyeBlue> ]);  //BoP Dye
+	recipe.addShapeless("dyeconvert03bop", <biomesoplenty:brown_dye> * 3, [ <ore:dyeBrown>, <ore:dyeBrown>, <ore:dyeBrown> ]); //BoP Dye
 
 
 //====== Chisel / Garden Trowel ======
