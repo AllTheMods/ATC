@@ -7,7 +7,7 @@ import crafttweaker.oredict.IOreDictEntry as IOreDictEntry;
 print(" =================== ATC Misc =================== ");
 print(" ================================================ ");
 
-//https://github.com/AllTheMods/ATC/blob/master/Modpack/scripts/atc_misc.zs
+// https://github.com/AllTheMods/ATC/blob/master/Modpack/scripts/atc_misc.zs
 
 //====== Variables ======
 //
@@ -15,7 +15,6 @@ print(" ================================================ ");
 	var strings = <ore:string>;
 	var cobweb = <minecraft:web>;
 	var marble = <ore:stoneMarble>;
-
 
 
 //====== Remove NMMlib stuff to prevent recipe conflicts
@@ -165,6 +164,7 @@ print(" ================================================ ");
 
 
 //====== Dye Oredict ======
+//--Ord (12-JULY-2017)
 //
 	var genericdye = <ore:dye> as IOreDictEntry;
 	var dyeoredicts = [
@@ -190,6 +190,7 @@ print(" ================================================ ");
 
 
 //====== Chisel / Garden Trowel ======
+//--Ord (12-JULY-2017)
 //
 	// originally conflicted with <chisel:chisel_iron:0>
 	recipes.remove(<waterstrainer:garden_trowel:0>);
@@ -201,23 +202,91 @@ print(" ================================================ ");
 	
 	// adding in "alternate" recipe for chisel as well just in case removal/conflict is still bugged
 	recipes.remove(<chisel:chisel_iron:0>);
-	recipes.addShapedMirrored("chiseltrowel1", <waterstrainer:garden_trowel:0>,
+	recipes.addShapedMirrored("chiseltrowel1", <chisel:chisel_iron:0>,
 		[[genericdye, <ore:ingotIron>],
 		 [<ore:stickWood>, null]]
 	);
 
 
+//====== TechReborn Coolant/Cell Conflict ======
+//--Ord (12-JULY-2017)
+//
+	//could be worthy of a report to mod dev as it might be an oversight
+	//10k coolant cell can be crafted with the bucket of water
+	//<techreborn:part:36> versus <techreborn:dynamiccell:0>
+	
+	recipes.removeShaped(<techreborn:part:36>, 
+		[[null,	<*>,	null],
+		 [<*>,	null,	<*>	],
+		 [null,	<*>,	null]]
+	);
+	// for some reason this is removing the 10k coolant recipe that has a bucket in the center
+	// could be a CrT bug, need to re-add the recipe for now:
+	
+		recipes.addShaped("coolantcell10k", <techreborn:part:36>, 
+		[[		null,		<ore:ingotTin>,			null		],
+		 [<ore:ingotTin>,	<minecraft:bucket>,	<ore:ingotTin>	],
+		 [		null,		<ore:ingotTin>,			null		]]
+	);
+
+
+//====== Quark Iron Plate (decoration) ======
+//--Ord (12-JULY-2017)
+//
+	recipes.remove(<quark:iron_plate:0>); 	// conflicts with <techreborn:iron_furnace:0>
+
+	// Orig recipe was 8 iron ingots -> 24 plate (3 plates per ingot)
+	// Adding bucket adds 3 ingots (or 9 "plates" worth)
+	// 24+9 = 33 and that's just a dumb number so I'm rounding down to a neat half-stack of 32
+
+	recipes.addShapedMirrored("quarkdecorfixiron", <quark:iron_plate:0>*32,
+		[[<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>],
+		 [<ore:ingotIron>, <minecraft:bucket>, <ore:ingotIron>],
+		 [<ore:ingotIron>, <ore:ingotIron>, <ore:ingotIron>]]
+	);
+
+
+//====== Rustic Lattice / Iron Gear ======
+//--Ord (12-JULY-2017)
+//
+	recipes.remove(<rustic:iron_lattice:0>);	//conflicts with <thermalfoundation:material:24> (iron gear)
+	
+	// A single iron ingot is "worth" 1.875 iron bars
+	// A single iron bars is .375 of an iron ingot
+	// Orig reustic recipe: 5 ingots = 16 lattice (or 3.2 lattice per ingot)
+	// 5 iron bars = 1.875 iron ingots
+	// 3.2 lattice per ingot times 1.875 = exactly 6 lattice per 5 iron bars
+	
+	recipes.addShapedMirrored("fixrusticlattice", <rustic:iron_lattice:0> * 6,
+		[[		null,			 <minecraft:iron_bars>, 		null		 ],
+		 [<minecraft:iron_bars>, <minecraft:iron_bars>, <minecraft:iron_bars>],
+		 [		null,			 <minecraft:iron_bars>, 		null		 ]]
+	);
+
+
+//====== Charcoal / Graphite ======
+// - Conflicts with tiny charcoal
+//--Ord (12-JULY-2017)
+//
+	recipes.remove(<charset:graphite>);
+	recipes.addShapeless("graphitecharcoal", <charset:graphite>*1,
+		[<actuallyadditions:item_misc:11>, <actuallyadditions:item_misc:11>, <actuallyadditions:item_misc:11>, <actuallyadditions:item_misc:11>]
+		);
+		
+	recipes.remove(<actuallyadditions:block_misc:5>);	// conflicts with <chisel:block_charcoal2:1>
+
+
+//====== CC cable / Futura ======
+//--Ord (12-JULY-2017)
+//
+	recipes.remove(<computercraft:cable:1>); //conflicting default recipe with chisel futura
+	recipes.addShapedMirrored("cccablefix", <computercraft:cable:1>,
+		[[<computercraft:cable:0>, 		null,			<computercraft:cable:0>],
+		 [<computercraft:cable:0>, <ore:dustRedstone>,	<computercraft:cable:0>],
+		 [<computercraft:cable:0>, 		null,			<computercraft:cable:0>]]
+	);
+	
+
 //ATC Scripts To-do:
-
-	//recipes.remove(<rustic:iron_lattice:0>);			//conflicts with <thermalfoundation:material:24>
-
-	//<techreborn:iron_furnace:0>	<quark:iron_plate:0> -- conflict?
-
-	//<techreborn:part:36>	<techreborn:dynamiccell:0> -- conflict?
-
-	//<actuallyadditions:block_misc:5>	<chisel:block_charcoal2:1> -- conflict?
-
-	//<computercraft:cable:1>	<chisel:futura:0> -- conflict?
-
-	//unify oredict for all ingots/blocks/nuggets and remove conflicting recipes
+//unify oredict for all ingots/blocks/nuggets and remove conflicting recipes
 
