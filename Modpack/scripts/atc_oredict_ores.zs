@@ -7,8 +7,6 @@ import crafttweaker.oredict.IOreDictEntry;
 print(" =================== ATC OreDict (ores) =================== ");
 print(" ========================================================== ");
 
-// https://github.com/AllTheMods/ATC/blob/master/Modpack/scripts/atc_oredict_ores.zs
-
 //====== Variables ======
 //
 
@@ -123,11 +121,13 @@ print(" ========================================================== ");
 
 	
 	//GAGIANITE
+	/* --Ord (disabled section 12-JULY-2017)
 	<ore:oreGagianite>.addItems([
 		<resourcefulcrops:ore>,
 		<resourcefulcrops:ore:1>
 	]);
 	recipes.addShapeless("gagianiteconvert", <resourcefulcrops:ore>*2, [<ore:oreGagianite>, <ore:oreGagianite>]);
+	*/
 
 	
 	//DIMENSIONAL (RFTools)
@@ -229,4 +229,3 @@ print(" ========================================================== ");
 		<techreborn:ore:3>
 		]);
 	recipes.addShapeless("sapphireconvert", <techreborn:ore:3>*2, [<ore:oreSapphire>, <ore:oreSapphire>]);
-
