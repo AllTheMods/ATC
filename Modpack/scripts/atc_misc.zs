@@ -334,6 +334,13 @@ print(" ================================================ ");
 //
 	recipes.remove(<mysticalagriculture:yellorium_seeds>);
 
+
+//====== Buggy Combs ======
+//--Blood (17-JULY-2017)
+//
+	recipes.remove(<forestry:bee_combs_0:16>);
+
+
 //ATC Scripts To-do:
 //unify oredict for all ingots/blocks/nuggets and remove conflicting recipes
 
