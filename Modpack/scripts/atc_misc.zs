@@ -332,7 +332,7 @@ print(" ================================================ ");
 //====== Uranium Seeds ======
 //--Blood (17-JULY-2017)
 //
-	recipes.remove(<mysticalagriculture:uranium_seeds>);
+	recipes.remove(<mysticalagriculture:yellorium_seeds>);
 
 //ATC Scripts To-do:
 //unify oredict for all ingots/blocks/nuggets and remove conflicting recipes
