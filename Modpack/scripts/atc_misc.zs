@@ -341,6 +341,16 @@ print(" ================================================ ");
 	recipes.remove(<forestry:bee_combs_0:16>);
 
 
+//====== Blaze Rod Burn Times Combs ======
+//--Ord (21-JULY-2017)
+//
+	//Buff blaze rods to 16 "items" smelt time (up from 12)
+	furnace.setFuel(<minecraft:blaze_rod>, 3200);
+
+	//Add burn time for blaze lantern - 64 items
+	furnace.setFuel(<quark:blaze_lantern>, 12800);
+
+
 //ATC Scripts To-do:
 //unify oredict for all ingots/blocks/nuggets and remove conflicting recipes
 
