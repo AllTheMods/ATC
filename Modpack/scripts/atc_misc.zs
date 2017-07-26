@@ -341,6 +341,7 @@ print(" ================================================ ");
 	recipes.remove(<forestry:bee_combs_0:16>);
 
 
+ 
 //====== Blaze Rod Burn Times Combs ======
 //--Ord (21-JULY-2017)
 //
@@ -351,6 +352,17 @@ print(" ================================================ ");
 	furnace.setFuel(<quark:blaze_lantern>, 12800);
 
 
+
+//====== Menril Sapling Recipe ======
+//--Ord (24-JULY-2017)
+//
+	recipes.addShapedMirrored("menrilsaplingcustom", <integrateddynamics:menril_sapling>,
+			[[<randomthings:runedust:9>, <randomthings:runedust:9>, <randomthings:runedust:9>],
+			 [<randomthings:runedust:9>, <ore:treeSapling>,         <randomthings:runedust:9>],
+			 [<randomthings:runedust:9>, <randomthings:runedust:9>, <randomthings:runedust:9>]]
+		);
+
+	
 //ATC Scripts To-do:
 //unify oredict for all ingots/blocks/nuggets and remove conflicting recipes
 
