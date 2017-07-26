@@ -1,0 +1,29 @@
+{
+  "default_ranks": {
+    "player": "player",
+    "op": "op"
+  },
+  "ranks": {
+    "player": {
+      "parent": "builtin_player",
+      "permissions": [],
+      "config": {}
+    },
+    "op": {
+      "parent": "builtin_op",
+      "permissions": [],
+      "config": {}
+    },
+    "staff": {
+      "parent": "builtin_op",
+      "syntax": "<&6$name&r> ",
+      "permissions": [],
+      "config": {}
+    },
+    "gefailter71": {
+      "parent": "staff",
+      "permissions": [],
+      "config": {}
+    }
+  }
+}

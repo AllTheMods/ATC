@@ -1,0 +1,136 @@
+{
+  "backups": {
+    "backups_to_keep": 30,
+    "display_file_size": true,
+    "enabled": true,
+    "backup_timer": 1.0,
+    "compression_level": 1,
+    "silent": false,
+    "folder": "",
+    "use_separate_thread": true
+  },
+  "commands": {
+    "chunks": true,
+    "trash_can": true,
+    "ranks": true,
+    "view_crash": true,
+    "warp": true,
+    "tpl": true,
+    "inv": true,
+    "heal": true,
+    "back": true,
+    "server_info": true,
+    "spawn": true,
+    "loaded_chunks": false,
+    "home": true,
+    "kickme": true,
+    "set_hour": true
+  },
+  "general": {
+    "auto_restart": true,
+    "chat": {
+      "substitute_list": [
+        {
+          "key": "shrug",
+          "val": "¯\\_(ツ)_/¯"
+        },
+        {
+          "key": "wave",
+          "val": "(´ ▽ ` )ﾉ"
+        },
+        {
+          "key": "tflip",
+          "val": "ノಠ益ಠ ノ彡┻━┻"
+        },
+        {
+          "key": "wat",
+          "val": "ಠ_ಠ"
+        },
+        {
+          "key": "whatever",
+          "val": "(-＿- )ノ"
+        },
+        {
+          "key": "happy",
+          "val": "^▽^"
+        },
+        {
+          "key": "eyeroll",
+          "val": "¬_¬"
+        },
+        {
+          "key": "cri",
+          "val": "╥_╥"
+        },
+        {
+          "key": "cat",
+          "val": "─‿‿─"
+        },
+        {
+          "key": "grumpy",
+          "val": "(︶︹︺)"
+        },
+        {
+          "key": "love",
+          "val": "(｡♥‿♥｡)"
+        },
+        {
+          "key": "finger",
+          "val": "(╹◡╹)凸"
+        },
+        {
+          "key": "ayy",
+          "val": "(☞ﾟ∀ﾟ)☞"
+        },
+        {
+          "key": "blush",
+          "val": "(✿◠‿◠)"
+        },
+        {
+          "key": "heart",
+          "val": "❤"
+        },
+        {
+          "key": "tears",
+          "val": "ಥ_ಥ"
+        }
+      ],
+      "substitute_prefix": "!"
+    },
+    "max_leaderboard_size": 250,
+    "server_info": {
+      "admin_quick_access": true,
+      "difficulty": true,
+      "mode": true
+    },
+    "restart_timer": 8.0
+  },
+  "world": {
+    "chunk_loading": false,
+    "log_chunkloading": false,
+    "chunk_claiming": true,
+    "safe_spawn": false,
+    "spawn_area_in_sp": false
+  },
+  "webapi": {
+    "update_interval": 5,
+    "enabled": false,
+    "file_location": ""
+  },
+  "login": {
+    "motd": [
+      "",
+      "Overloaded mod added with some super-endgame recipes for something to keep from getting bored",
+      "Also, Veinminer configs tweaked, feel free to try it again and give some feedback.",
+      ""
+    ],
+    "enable_motd": true,
+    "enable_starting_items": true,
+    "starting_items": []
+  },
+  "ranks": {
+    "override_chat": true,
+    "override_commands": true,
+    "enabled": true
+  }
+}
