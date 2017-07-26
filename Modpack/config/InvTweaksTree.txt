@@ -20,7 +20,7 @@
 # Thanks to Larandar & Lunaqua for their contributions.
 -->
 <!-- Note: 'stuff' matches everything, even items that don't appear here -->
-<stuff treeVersion="1.11.0">
+<stuff treeVersion="1.12.0">
     <equipment>
         <weapon>
             <sword>
@@ -335,6 +335,26 @@
                     <redStainedClay id="stained_hardened_clay" damage="14"/>
                     <blackStainedClay id="stained_hardened_clay" damage="15"/>
                 </stainedClay>
+                <concrete id="concrete"/>
+                <concretePowder id="concrete_powder"/>
+                <glazedTerracotta>
+                    <whiteGlazedTerracotta id="white_glazed_terracotta"/>
+                    <blackGlazedTerracotta id="black_glazed_terracotta"/>
+                    <redGlazedTerracotta id="red_glazed_terracotta"/>
+                    <greenGlazedTerracotta id="green_glazed_terracotta"/>
+                    <brownGlazedTerracotta id="brown_glazed_terracotta"/>
+                    <blueGlazedTerracotta id="blue_glazed_terracotta"/>
+                    <purpleGlazedTerracotta id="purple_glazed_terracotta"/>
+                    <cyanGlazedTerracotta id="cyan_glazed_terracotta"/>
+                    <silverGlazedTerracotta id="silver_glazed_terracotta"/>
+                    <grayGlazedTerracotta id="gray_glazed_terracotta"/>
+                    <pinkGlazedTerracotta id="pink_glazed_terracotta"/>
+                    <limeGlazedTerracotta id="lime_glazed_terracotta"/>
+                    <yellowGlazedTerracotta id="yellow_glazed_terracotta"/>
+                    <lightBlueGlazedTerracotta id="light_blue_glazed_terracotta"/>
+                    <magentaGlazedTerracotta id="magenta_glazed_terracotta"/>
+                    <orangeGlazedTerracotta id="orange_glazed_terracotta"/>
+                </glazedTerracotta>
                 <glass>
                     <glassBlock id="glass"/>
                     <glassPane id="glass_pane"/>
@@ -521,7 +541,11 @@
             <redstoneRepeater id="powered_repeater"/>
             <dispenser id="dispenser"/>
             <noteBlock id="noteblock"/>
-            <commandBlock id="command_block"/>
+            <commandBlocks>
+                <commandBlock id="command_block"/>
+                <repeatingCommandBlock id="repeating_command_block"/>
+                <chainCommandBlock id="chain_command_block"/>
+            </commandBlocks>
             <observer id="observer"/>
             <daylightSensor id="daylight_detector"/>
             <redstoneBlock id="redstone_block"/>
@@ -587,13 +611,14 @@
             <enderPearl id="ender_pearl"/>
             <blazeRod id="blaze_rod"/>
             <ghastTear id="ghast_tear"/>
+            <ironNugget id="iron_nugget"/>
             <goldNugget id="gold_nugget"/>
             <netherStar id="nether_star"/>
             <prismarineCrystals id="prismarine_crystals"/>
             <prismarineCrystal id="prismarine_crystals"/>
             <prismarineShard id="prismarine_shard"/>
             <shulkerShell id="shulker_shell"/>
-            <totem id="totem"/>
+            <totemOfUndying id="totem_of_undying"/>
         </huntingResources>
         <farmingResources>
             <milk id="milk_bucket"/>
@@ -684,6 +709,7 @@
                 <goldHorseArmor id="golden_horse_armor"/>
                 <diamondHorseArmor id="diamond_horse_armor"/>
             </horseArmor>
+            <knoweldgeBook id="knowledge_book"/>
         </utility>
         <bucket>
             <emptyBucket id="bucket"/>
