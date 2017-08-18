@@ -13,16 +13,16 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 */
 
 //ATM Star
-	<ore:creativeATMStar>.add(<atmtweaks:item_material>);
+    <ore:creativeATMStar>.add(<atmtweaks:item_material>);
 
 //Steel Dust
-	<ore:dustSteel>.add(<magneticraft:dusts:6>);
+    <ore:dustSteel>.add(<magneticraft:dusts:6>);
 
 //Astral Sorcery
-	<ore:astralGemCrystals>.add(<astralsorcery:itemcraftingcomponent:4>);
-	<ore:astralGemCrystals>.add(<astralsorcery:itemtunedrockcrystal>);
-	<ore:astralGemCrystals>.add(<astralsorcery:itemcelestialcrystal>);
-	
+    <ore:astralGemCrystals>.add(<astralsorcery:itemcraftingcomponent:4>);
+    <ore:astralGemCrystals>.add(<astralsorcery:itemtunedrockcrystal>);
+    <ore:astralGemCrystals>.add(<astralsorcery:itemcelestialcrystal>);
+    
 //====== Dye Oredict ======
 //--Ord (12-JULY-2017)
 //
@@ -77,31 +77,31 @@ Anything regarding oredict that doesn't need it's own dedicated script file
 
 //====== Magneticraft Plates ======
 //
-	<ore:plateIron>.addAll(<ore:lightPlateIron>);
+    <ore:plateIron>.addAll(<ore:lightPlateIron>);
 
 
 //====== Forestry Circuit Boards ======
 //
-	<ore:circuitBasic>.add(<forestry:chipsets:0>);
-	<ore:circuitBasic>.add(<forestry:chipsets:1>);
-	<ore:circuitBasic>.add(<forestry:chipsets:2>);
-	<ore:circuitBasic>.add(<forestry:chipsets:3>);
+    <ore:circuitBasic>.add(<forestry:chipsets:0>);
+    <ore:circuitBasic>.add(<forestry:chipsets:1>);
+    <ore:circuitBasic>.add(<forestry:chipsets:2>);
+    <ore:circuitBasic>.add(<forestry:chipsets:3>);
 
 
 //====== Add Magneticraft Limestone to OreDict =======
 //--Ord (13-AUG-2017)
 //
-	<ore:stoneLimestone>.addItems([
-		<magneticraft:limestone>,
-		<magneticraft:burnt_limestone>,
-		<magneticraft:tile_limestone>
-	]);
+    <ore:stoneLimestone>.addItems([
+        <magneticraft:limestone>,
+        <magneticraft:burnt_limestone>,
+        <magneticraft:tile_limestone>
+    ]);
 
-	<ore:stoneLimestonePolished>.addItems([
-		<magneticraft:limestone>,
-		<magneticraft:burnt_limestone>,
-		<magneticraft:tile_limestone>
-	]);
+    <ore:stoneLimestonePolished>.addItems([
+        <magneticraft:limestone>,
+        <magneticraft:burnt_limestone>,
+        <magneticraft:tile_limestone>
+    ]);
     
 
 

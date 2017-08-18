@@ -28,15 +28,15 @@ val energyCore = <overloaded:energy_core>;
 //Ordinator 2017-JUL-24
 //this core is needed for most really op stuff
 //
-	recipes.remove(energyCore);
-	recipes.addShapedMirrored("overloadedenergycore", energyCore, 
-		[[opinium, dracoCap, opinium],
-		 [inflictGem, dracoReactor, inflictGem],
-		 [fusionCoil, fusionCoil, fusionCoil]]);
+    recipes.remove(energyCore);
+    recipes.addShapedMirrored("overloadedenergycore", energyCore, 
+        [[opinium, dracoCap, opinium],
+         [inflictGem, dracoReactor, inflictGem],
+         [fusionCoil, fusionCoil, fusionCoil]]);
 
 
 //====== Infinite capacitor ======
 //Ordinator 2017-JUL-24 (WIP)
 //
-	recipes.remove(<overloaded:infinite_capacitor>);
-	<overloaded:infinite_capacitor>.addTooltip(format.red("Temporarily disabled. Recipe WIP"));
+    recipes.remove(<overloaded:infinite_capacitor>);
+    <overloaded:infinite_capacitor>.addTooltip(format.red("Temporarily disabled. Recipe WIP"));

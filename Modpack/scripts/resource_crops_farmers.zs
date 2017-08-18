@@ -15,7 +15,7 @@ to removing the mod altogether for being too inbalanced. Instead it is
 used as a mid/late game bonus as players work towards endgame and 
 creative-only recipes.
 
-*/	
+*/    
 
 //====== Variables ======
 //
@@ -30,16 +30,16 @@ creative-only recipes.
     var RoyalJelly = <forestry:royal_jelly>;
     var GrowEssence = <minecraft:spawn_egg>.withTag({display:{Name:"Growth Essence",Lore:["This item represents the", "essence of growth."]}});
     var Cloche = <immersiveengineering:metal_device1:13>;
-	<ore:growGlass>.add(<actuallyadditions:block_greenhouse_glass>);
-	<ore:growGlass>.add(<astralsorcery:itemcoloredlens:2>);
+    <ore:growGlass>.add(<actuallyadditions:block_greenhouse_glass>);
+    <ore:growGlass>.add(<astralsorcery:itemcoloredlens:2>);
 
-	
+    
 //====== Custom "growth essence" ======
 //
     mods.actuallyadditions.Empowerer.addRecipe(GrowEssence, 
-		RoyalJelly, 
-		AAFert, IFFert, TFFert, AttainEssence, 
-		100000, 1200, [0.0, 0.6, 0.1]);
+        RoyalJelly, 
+        AAFert, IFFert, TFFert, AttainEssence, 
+        100000, 1200, [0.0, 0.6, 0.1]);
 
 
 //====== Attained Drops Tuning ======
@@ -71,15 +71,15 @@ creative-only recipes.
         [<immersiveengineering:treated_wood>, <immersiveengineering:toolupgrade:6>, <immersiveengineering:treated_wood>]
     ]);
 
-	
+    
 //====== Growable Cells ======
 // Ord
 //
-	recipes.remove(<growablecells:seedr1k>);
-	recipes.addShapedMirrored(<growablecells:seedr1k>, [
-		[<refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>],
-		[<refinedstorage:storage_disk:1>, <ore:creativeATMStar>, <refinedstorage:storage_disk:1>],
-		[<refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>]
-		]);
-	
-	
+    recipes.remove(<growablecells:seedr1k>);
+    recipes.addShapedMirrored(<growablecells:seedr1k>, [
+        [<refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>],
+        [<refinedstorage:storage_disk:1>, <ore:creativeATMStar>, <refinedstorage:storage_disk:1>],
+        [<refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>]
+        ]);
+    
+    

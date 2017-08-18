@@ -10,8 +10,8 @@ import crafttweaker.oredict.IOreDictEntry;
     var strings = <ore:string>;
     var cobweb = <minecraft:web>;
     var marble = <ore:stoneMarble>;
-	val logs = <ore:logWood>;
-	val sticks = <ore:stickWood>;
+    val logs = <ore:logWood>;
+    val sticks = <ore:stickWood>;
 
     //Magneticraft Sluice
     var MnCChunkIron     = <magneticraft:chunks:0>;  //  Iron
@@ -28,9 +28,9 @@ import crafttweaker.oredict.IOreDictEntry;
     var MnCChunkTin      = <magneticraft:chunks:13>; //  Tin
     var MnCChunkZinc     = <magneticraft:chunks:14>; //  Zinc
 
-	//Environmental Tech
-	var ETAethiumCrystal = <environmentaltech:aethium_crystal>;
-	
+    //Environmental Tech
+    var ETAethiumCrystal = <environmentaltech:aethium_crystal>;
+    
     //Magneticraft
     var MnCSteelPlate = <magneticraft:light_plates:6>;
 
@@ -73,27 +73,27 @@ import crafttweaker.oredict.IOreDictEntry;
     var MekAtomicAlloy = <mekanism:atomicalloy>;
     var MekUltControl = <mekanism:controlcircuit:3>;
     var MekCompressedCarbon = <mekanism:compressedcarbon>;
-	
-	//Roots 
-	var rootsTimeSpell = <roots:petal_dust>.withTag({spell: "spell_oxeye_daisy"});
+    
+    //Roots 
+    var rootsTimeSpell = <roots:petal_dust>.withTag({spell: "spell_oxeye_daisy"});
 
     //Immersive
     var ImmersiveAsphalt = <immersivepetroleum:stone_decoration>; //Asphalt
     var ImmersiveElectrode = <immersiveengineering:graphite_electrode>; // Electrode
     var ImmersiveSteelRod = <immersiveengineering:material:2>;
-	var TreatedStick = <immersiveengineering:material:0>;
-	var AluminumRod = <immersiveengineering:material:3>;
+    var TreatedStick = <immersiveengineering:material:0>;
+    var AluminumRod = <immersiveengineering:material:3>;
     
     //PSI
     var PsiCore = <psi:cad_core:4>;    //Radiative Core
     var PsiEbony = <psi:psi_decorative:7>; //EbonyBlock
     var PsiIvory = <psi:psi_decorative:8>; //IvoryBlock
-	
-	//Actually Additions
-	var AAWoodCasing = <actuallyadditions:block_misc:4>;
-	var AAIronCasing = <actuallyadditions:block_misc:9>;
-	var AABlackQuartz = <actuallyadditions:item_misc:5>;	
-	val AADoubleBatt = <actuallyadditions:item_battery_double>.withTag({Energy: 350000});
+    
+    //Actually Additions
+    var AAWoodCasing = <actuallyadditions:block_misc:4>;
+    var AAIronCasing = <actuallyadditions:block_misc:9>;
+    var AABlackQuartz = <actuallyadditions:item_misc:5>;    
+    val AADoubleBatt = <actuallyadditions:item_battery_double>.withTag({Energy: 350000});
 
     //Misc Storage
     var SimpleStorageController = <storagenetwork:master>;
@@ -124,7 +124,7 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //====== Draconic Evo ======
 // Ord
-//	
+//    
     recipes.remove(<draconicevolution:draconic_core>);
     recipes.addShaped(<draconicevolution:draconic_core>, [
         [<draconicevolution:draconium_ingot>, <magneticraft:chunks:1>, <draconicevolution:draconium_ingot>], 
@@ -148,8 +148,8 @@ import crafttweaker.oredict.IOreDictEntry;
 
    
 
-		
-	
+        
+    
 //====== Blaze Rod Burn Times ======
 //--Ord (21-JULY-2017)
 //
@@ -165,90 +165,90 @@ import crafttweaker.oredict.IOreDictEntry;
     recipes.removeShaped(ImmersiveSteelRod);
 
 
-	
+    
 //====== Actually Additions Tweaks
 // Ord
 //
-	//Wood casing
-	recipes.remove(AAWoodCasing);
-	recipes.addShapedMirrored("crtwoodcasing", AAWoodCasing, [
-		[logs, sticks, logs],
-		[sticks, AABlackQuartz, sticks],
-		[logs, sticks, logs]
-		]);
-	
-	//Iron casing
-	recipes.remove(AAIronCasing);
-	recipes.addShapedMirrored("crtironcasing", AAIronCasing, [
-		[<ore:ingotIron>, <ore:stickAluminum>, <ore:ingotIron>],
-		[<ore:stickAluminum>, AAWoodCasing, <ore:stickAluminum>],
-		[<ore:ingotIron>, <ore:stickAluminum>, <ore:ingotIron>]
-		]);
-	
-	//Advanced Coil
-	recipes.remove(<actuallyadditions:item_misc:8>);
-	recipes.addShaped("crtadvcoil", <actuallyadditions:item_misc:8>, [
-		[<minecraft:gold_nugget>, <minecraft:gold_nugget>, <ore:wireElectrum>],
-		[<minecraft:gold_nugget>, <actuallyadditions:item_misc:7>, <minecraft:gold_nugget>],
-		[<ore:wireElectrum>, <minecraft:gold_nugget>, <minecraft:gold_nugget>]
-		]);
-	
-	//Empowerer
-	<ore:blockBattery>.add(<magneticraft:battery>);
-	<ore:blockBattery>.add(<integrateddynamics:energy_battery>);
-	<ore:blockBattery>.add(<mekanismgenerators:generator:9>);
-	recipes.remove(<actuallyadditions:block_empowerer>);
-	recipes.addShaped("crtempowerer", <actuallyadditions:block_empowerer>, [
-		[<ore:blockGlassHardened>, <actuallyadditions:item_crystal:4>, <ore:blockGlassHardened>],
-		[AADoubleBatt, <actuallyadditions:block_display_stand>, AADoubleBatt],
-		[<ore:blockBattery>, <ore:circuitAdvanced>, <ore:blockBattery>]
-		]);
-	
+    //Wood casing
+    recipes.remove(AAWoodCasing);
+    recipes.addShapedMirrored("crtwoodcasing", AAWoodCasing, [
+        [logs, sticks, logs],
+        [sticks, AABlackQuartz, sticks],
+        [logs, sticks, logs]
+        ]);
+    
+    //Iron casing
+    recipes.remove(AAIronCasing);
+    recipes.addShapedMirrored("crtironcasing", AAIronCasing, [
+        [<ore:ingotIron>, <ore:stickAluminum>, <ore:ingotIron>],
+        [<ore:stickAluminum>, AAWoodCasing, <ore:stickAluminum>],
+        [<ore:ingotIron>, <ore:stickAluminum>, <ore:ingotIron>]
+        ]);
+    
+    //Advanced Coil
+    recipes.remove(<actuallyadditions:item_misc:8>);
+    recipes.addShaped("crtadvcoil", <actuallyadditions:item_misc:8>, [
+        [<minecraft:gold_nugget>, <minecraft:gold_nugget>, <ore:wireElectrum>],
+        [<minecraft:gold_nugget>, <actuallyadditions:item_misc:7>, <minecraft:gold_nugget>],
+        [<ore:wireElectrum>, <minecraft:gold_nugget>, <minecraft:gold_nugget>]
+        ]);
+    
+    //Empowerer
+    <ore:blockBattery>.add(<magneticraft:battery>);
+    <ore:blockBattery>.add(<integrateddynamics:energy_battery>);
+    <ore:blockBattery>.add(<mekanismgenerators:generator:9>);
+    recipes.remove(<actuallyadditions:block_empowerer>);
+    recipes.addShaped("crtempowerer", <actuallyadditions:block_empowerer>, [
+        [<ore:blockGlassHardened>, <actuallyadditions:item_crystal:4>, <ore:blockGlassHardened>],
+        [AADoubleBatt, <actuallyadditions:block_display_stand>, AADoubleBatt],
+        [<ore:blockBattery>, <ore:circuitAdvanced>, <ore:blockBattery>]
+        ]);
+    
 
 //====== Spike Mod Qty Adjust ======
 // Ord
 //
-	recipes.remove(<spikemod:wooden_spike>);
-	recipes.addShaped(<spikemod:wooden_spike>, [
-		[null, <minecraft:wooden_sword:*>, null], 
-		[<minecraft:wooden_sword:*>, logs, <minecraft:wooden_sword:*>], 
-		[logs, planks, logs]
-		]);
+    recipes.remove(<spikemod:wooden_spike>);
+    recipes.addShaped(<spikemod:wooden_spike>, [
+        [null, <minecraft:wooden_sword:*>, null], 
+        [<minecraft:wooden_sword:*>, logs, <minecraft:wooden_sword:*>], 
+        [logs, planks, logs]
+        ]);
 
-	recipes.remove(<spikemod:stone_spike>);
-	recipes.addShaped(<spikemod:stone_spike>, [
-		[null, <minecraft:stone_sword:*>, null], 
-		[<minecraft:stone_sword:*>, <spikemod:wooden_spike:*>, <minecraft:stone_sword:*>], 
-		[<spikemod:wooden_spike:*>, <ore:bricksStone>, <spikemod:wooden_spike:*>]
-		]);
+    recipes.remove(<spikemod:stone_spike>);
+    recipes.addShaped(<spikemod:stone_spike>, [
+        [null, <minecraft:stone_sword:*>, null], 
+        [<minecraft:stone_sword:*>, <spikemod:wooden_spike:*>, <minecraft:stone_sword:*>], 
+        [<spikemod:wooden_spike:*>, <ore:bricksStone>, <spikemod:wooden_spike:*>]
+        ]);
 
-	recipes.remove(<spikemod:iron_spike>);
-	recipes.addShaped(<spikemod:iron_spike>, [
-		[null, <minecraft:iron_sword:*>, null], 
-		[<minecraft:iron_sword:*>, <spikemod:stone_spike:*>, <minecraft:iron_sword:*>], 
-		[<spikemod:stone_spike:*>, <ore:blockIron>, <spikemod:stone_spike:*>]
-		]);
+    recipes.remove(<spikemod:iron_spike>);
+    recipes.addShaped(<spikemod:iron_spike>, [
+        [null, <minecraft:iron_sword:*>, null], 
+        [<minecraft:iron_sword:*>, <spikemod:stone_spike:*>, <minecraft:iron_sword:*>], 
+        [<spikemod:stone_spike:*>, <ore:blockIron>, <spikemod:stone_spike:*>]
+        ]);
 
-	recipes.remove(<spikemod:golden_spike>);
-	recipes.addShaped(<spikemod:golden_spike>, [
-		[null, <minecraft:golden_sword:*>, null], 
-		[<minecraft:golden_sword:*>, <spikemod:iron_spike:*>, <minecraft:golden_sword:*>], 
-		[<spikemod:iron_spike:*>, <ore:blockGold>, <spikemod:iron_spike:*>]
-		]);
+    recipes.remove(<spikemod:golden_spike>);
+    recipes.addShaped(<spikemod:golden_spike>, [
+        [null, <minecraft:golden_sword:*>, null], 
+        [<minecraft:golden_sword:*>, <spikemod:iron_spike:*>, <minecraft:golden_sword:*>], 
+        [<spikemod:iron_spike:*>, <ore:blockGold>, <spikemod:iron_spike:*>]
+        ]);
 
-	recipes.remove(<spikemod:diamond_spike>);
-	recipes.addShaped(<spikemod:diamond_spike>, [
-		[null, <minecraft:diamond_sword:*>, null], 
-		[<minecraft:diamond_sword:*>, <spikemod:golden_spike:*>, <minecraft:diamond_sword:*>], 
-		[<spikemod:golden_spike:*>, <ore:blockDiamond>, <spikemod:golden_spike:*>]
-		]);
+    recipes.remove(<spikemod:diamond_spike>);
+    recipes.addShaped(<spikemod:diamond_spike>, [
+        [null, <minecraft:diamond_sword:*>, null], 
+        [<minecraft:diamond_sword:*>, <spikemod:golden_spike:*>, <minecraft:diamond_sword:*>], 
+        [<spikemod:golden_spike:*>, <ore:blockDiamond>, <spikemod:golden_spike:*>]
+        ]);
 
-	recipes.remove(<spikemod:looting_spike>);
-	recipes.addShaped(<spikemod:looting_spike>, [
-		[<minecraft:enchanted_book:*>, <spikemod:diamond_spike:*>, <minecraft:enchanted_book:*>], 
-		[<spikemod:diamond_spike:*>, <minecraft:nether_star:*>, <spikemod:diamond_spike:*>], 
-		[<minecraft:enchanted_book:*>, <minecraft:enchanting_table:*>, <minecraft:enchanted_book:*>]
-		]);
+    recipes.remove(<spikemod:looting_spike>);
+    recipes.addShaped(<spikemod:looting_spike>, [
+        [<minecraft:enchanted_book:*>, <spikemod:diamond_spike:*>, <minecraft:enchanted_book:*>], 
+        [<spikemod:diamond_spike:*>, <minecraft:nether_star:*>, <spikemod:diamond_spike:*>], 
+        [<minecraft:enchanted_book:*>, <minecraft:enchanting_table:*>, <minecraft:enchanted_book:*>]
+        ]);
 
 
 
@@ -260,24 +260,24 @@ import crafttweaker.oredict.IOreDictEntry;
 //====== Glider Not Sided (QoL) ======
 // Ord 
 //
-	recipes.remove(<openglider:hang_glider_basic>);
-	<ore:gliderWings>.add(<openglider:hang_glider_part:0>);
-	<ore:gliderWings>.add(<openglider:hang_glider_part:1>);
-	recipes.addShapedMirrored("crtglidersided", <openglider:hang_glider_basic>, [
-		[<ore:gliderWings>, <openglider:hang_glider_part:2>, <ore:gliderWings>]
-		]);
-		
+    recipes.remove(<openglider:hang_glider_basic>);
+    <ore:gliderWings>.add(<openglider:hang_glider_part:0>);
+    <ore:gliderWings>.add(<openglider:hang_glider_part:1>);
+    recipes.addShapedMirrored("crtglidersided", <openglider:hang_glider_basic>, [
+        [<ore:gliderWings>, <openglider:hang_glider_part:2>, <ore:gliderWings>]
+        ]);
+        
 
 
 //====== Mek plastic needs TR and IF ======
 // This was intended to be used as a "difficult" gate to get rubber/silicone seeds
 //
-	recipes.remove(<mekanism:plasticblock:*>);
-	recipes.addShapedMirrored("crtplasticblock", <mekanism:plasticblock:0>, [
-		[<mekanism:polyethene>, <industrialforegoing:plastic>, <mekanism:polyethene>],
-		[<industrialforegoing:plastic>, <techreborn:part:32>, <industrialforegoing:plastic>],
-		[<mekanism:polyethene>, <industrialforegoing:plastic>, <mekanism:polyethene>]
-		]);
+    recipes.remove(<mekanism:plasticblock:*>);
+    recipes.addShapedMirrored("crtplasticblock", <mekanism:plasticblock:0>, [
+        [<mekanism:polyethene>, <industrialforegoing:plastic>, <mekanism:polyethene>],
+        [<industrialforegoing:plastic>, <techreborn:part:32>, <industrialforegoing:plastic>],
+        [<mekanism:polyethene>, <industrialforegoing:plastic>, <mekanism:polyethene>]
+        ]);
 
 
 //EOF

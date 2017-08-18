@@ -12,7 +12,7 @@ Instead of being removed from the pack entirely due, Extreme Reactors
 has been converted into a means to gate extremely difficult endgame
 recipes and "creative only" item requirements
 
-*/	
+*/    
 
 //====== Variables ======
 //
@@ -23,19 +23,19 @@ recipes and "creative only" item requirements
     var BRCyanDust = <bigreactors:dustmetals:1>;
     var BRBlueDust = <bigreactors:dustmetals:3>;
     var BRBlutonium = <bigreactors:ingotmetals:3>;
-	var TRAdvAlloy = <techreborn:ingot:20>;
-	var ImmersiveElectrode = <immersiveengineering:graphite_electrode>; // Electrode
+    var TRAdvAlloy = <techreborn:ingot:20>;
+    var ImmersiveElectrode = <immersiveengineering:graphite_electrode>; // Electrode
     var ImmersiveSteelRod = <immersiveengineering:material:2>;
-	var RTImbueFire   = <randomthings:imbue:0>; // Fire
-	var MekCrystalSilver = <mekanism:crystal:5>; //Silver
-	var lCyanite = <liquid:cyanite>.withAmount(144);
+    var RTImbueFire   = <randomthings:imbue:0>; // Fire
+    var MekCrystalSilver = <mekanism:crystal:5>; //Silver
+    var lCyanite = <liquid:cyanite>.withAmount(144);
     var lMenril = <liquid:menrilresin>.withAmount(144);
     var TRCarbonPlate = <techreborn:plates:2>;
-	var IDReader = <integrateddynamics:part_inventory_reader_item>;
-	var MekUltControl = <mekanism:controlcircuit:3>;
-	var ECBloodInfusion = <evilcraft:blood_infusion_core>;
-	var PsiCore = <psi:cad_core:4>;    //Radiative Core
-	
+    var IDReader = <integrateddynamics:part_inventory_reader_item>;
+    var MekUltControl = <mekanism:controlcircuit:3>;
+    var ECBloodInfusion = <evilcraft:blood_infusion_core>;
+    var PsiCore = <psi:cad_core:4>;    //Radiative Core
+    
 
 //Reactor And Turbine Housing CORE
     recipes.remove(<bigreactors:reactorcasingcores>);
@@ -52,7 +52,7 @@ recipes and "creative only" item requirements
         [<minecraft:iron_ingot>, <bigreactors:ingotmetals:2>, <minecraft:iron_ingot>]
         ]);
 
-		
+        
 //Reactor and Turbine HOUSING
     recipes.remove(<bigreactors:reactorcasing>);
     recipes.remove(<bigreactors:turbinehousing>);
@@ -77,16 +77,16 @@ recipes and "creative only" item requirements
         [ImmersiveElectrode, <minecraft:end_rod>, ImmersiveElectrode]
         ]);
 
-		
+        
 //Reactor Controller
-	recipes.remove(<bigreactors:reactorcontroller>);
+    recipes.remove(<bigreactors:reactorcontroller>);
     recipes.addShaped(<bigreactors:reactorcontroller>, [
         [<bigreactors:reactorcasing>, ECBloodInfusion, <bigreactors:reactorcasing>], 
         [<ore:ingotUranium>, IDReader, <ore:ingotUranium>], 
         [<bigreactors:reactorcasing>, MekUltControl, <bigreactors:reactorcasing>]
         ]);
     
-	
+    
 //Ludicrite
     recipes.remove(BRLudicrite);
     recipes.addShaped("crtludicrite", BRLudicrite, [
@@ -95,19 +95,19 @@ recipes and "creative only" item requirements
         [BRBlutonium, MekCrystalSilver, BRBlutonium]
         ]);
 
-		
+        
 //Graphite
     recipes.remove(BRGraphite);
     recipes.addShaped("crtgraphite", BRGraphite, [[TRCarbonPlate, TRCarbonPlate]]);
 
-	
+    
 //Blutonium Processing
     recipes.removeShaped(BRBlutonium);
-	recipes.addShapeless("crtBRblufix", BRBlutonium * 9, [<bigreactors:blockmetals:3>]);
+    recipes.addShapeless("crtBRblufix", BRBlutonium * 9, [<bigreactors:blockmetals:3>]);
     mods.thermalexpansion.Crucible.addRecipe(lCyanite, BRCyanDust, 200000);
     mods.thermalexpansion.Refinery.addRecipe(lMenril, BRBlueDust, lCyanite, 200000);
 
-	BRBlueDust.addTooltip("Extracted from fluid cyanite");
+    BRBlueDust.addTooltip("Extracted from fluid cyanite");
     
-	
+    
    

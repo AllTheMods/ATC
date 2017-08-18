@@ -8,13 +8,13 @@ print(" =================== Recipe Conflicts =================== ");
 print(" ======================================================== ");
 /*
 
-	This script is dedicated to any items that have conflicting recipes
+    This script is dedicated to any items that have conflicting recipes
 
 */
 
 //====== Variables ======
-	var MekBoilerCasing = <mekanism:basicblock2:7>;
-	var MnCSteelPlate = <magneticraft:light_plates:6>;
+    var MekBoilerCasing = <mekanism:basicblock2:7>;
+    var MnCSteelPlate = <magneticraft:light_plates:6>;
 
 //====== Misc Tool/Armor Conflicts ======
 //
@@ -144,14 +144,14 @@ print(" ======================================================== ");
          [<computercraft:cable:0>, <ore:dustRedstone>,    <computercraft:cable:0>],
          [<computercraft:cable:0>,         null,            <computercraft:cable:0>]]
     );
-	
-	
+    
+    
 //====== Charcoal ======
 //--Ord (12-JULY-2017)
 //
     recipes.remove(<actuallyadditions:block_misc:5>);    // conflicts with <chisel:block_charcoal2:1>
-	
-	
+    
+    
 //====== TechReborn Coolant/Cell Conflict ======
 //--Ord (12-JULY-2017)
 //
@@ -197,23 +197,23 @@ print(" ======================================================== ");
 //
     recipes.remove(<thermalfoundation:material:100>);
 
-	
+    
 //====== Wooden Rail ======
 // Tconstruct vs Extra Rails conflict
 //
     recipes.remove(<tconstruct:wood_rail:0>);
 
-	
+    
 //====== Harvestcraft Cotton ======
 // Extra recipe not needed, conflicts with seed recipe
 //
     recipes.remove(<harvestcraft:cottonitem>);
 
-	
+    
 // ====== Boiler Casing ======
 // conflicts with Steel Gear
-//	
-	recipes.remove(MekBoilerCasing);
+//    
+    recipes.remove(MekBoilerCasing);
     recipes.addShaped(<mekanism:basicblock2:7> * 4, [
         [null, <ore:ingotSteel>, null], 
         [<ore:ingotSteel>, MnCSteelPlate, <ore:ingotSteel>], 

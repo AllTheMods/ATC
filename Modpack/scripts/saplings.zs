@@ -26,18 +26,18 @@ Saplings added to oredict in oredict_wood.zs
 //====== Recipe for Simply Tea Sapling =======
 //Ordinator, 2017-AUG-13
 //
-	recipes.addShapeless("crt_teasapling", <simplytea:tea_sapling> * 2,
-		[<ore:cropTea>, <ore:cropTea>, <ore:treeSapling>, <ore:treeSapling>]
-		);
+    recipes.addShapeless("crt_teasapling", <simplytea:tea_sapling> * 2,
+        [<ore:cropTea>, <ore:cropTea>, <ore:treeSapling>, <ore:treeSapling>]
+        );
 
-	
+    
 //====== Lucky Beans Sapling Recipe ======
 // Ord
 //
-	<ore:specialBeans>.add(<cyclicmagic:sprout_seed>);
-	<ore:specialBeans>.add(<harvestcraft:jellybeansitem>);
-	<ore:specialBeans>.add(<randomthings:beans:1>);
-	<ore:specialBeans>.add(<randomthings:beans:2>);
+    <ore:specialBeans>.add(<cyclicmagic:sprout_seed>);
+    <ore:specialBeans>.add(<harvestcraft:jellybeansitem>);
+    <ore:specialBeans>.add(<randomthings:beans:1>);
+    <ore:specialBeans>.add(<randomthings:beans:2>);
     recipes.addShaped("crtluckybeans", <luckybeans:bean_sapling>, [
         [<ore:specialBeans>, <ore:specialBeans>, <ore:specialBeans>],
         [<ore:specialBeans>, <ore:treeSapling>, <ore:specialBeans>],
@@ -54,13 +54,13 @@ Saplings added to oredict in oredict_wood.zs
              [<randomthings:runedust:9>, <randomthings:runedust:9>, <randomthings:runedust:9>]]
         );
 
-		
+        
 //====== Rubber Sapling Recipe ======
 // Ord
 //
     <ore:itemRubber>.add(<industrialforegoing:plastic>);
     <ore:materialRubber>.add(<industrialforegoing:plastic>);
-	<ore:itemRubber>.add(<mekanism:polyethene:0>);
+    <ore:itemRubber>.add(<mekanism:polyethene:0>);
     <ore:materialRubber>.add(<mekanism:polyethene:0>);
     
     recipes.addShaped("crtTRrubber", <techreborn:rubber_sapling>, [
@@ -69,4 +69,4 @@ Saplings added to oredict in oredict_wood.zs
         [<ore:materialRubber>, <ore:materialRubber>, <ore:materialRubber>]
         ]);
 
-		
+        
