@@ -1,0 +1,15 @@
+{
+	"name": "sugar",
+	"icon": "minecraft:sugar",
+	"color": "F8F7F5",
+	"decay": 3,
+	"enabled": true,
+	"food": {
+		"oredict": [
+
+		],
+		"items": [
+
+		]
+	}
+}

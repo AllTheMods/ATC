@@ -11,7 +11,7 @@ The following is an example of what the json file should look like (See further 
 [
     {
         "mode": "ADD",
-        "result": "minecraft:beacon",
+        "result": "atmtweaks:item_material,0",
         "catalyst": "minecraft:nether_star",
         "energy": 1000,
         "tier": 1,

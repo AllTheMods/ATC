@@ -1,0 +1,25 @@
+# Configuration file
+
+~CONFIG_VERSION: 0.1.0-beta-1.12
+
+clouds {
+    # Enable / disable skyblock clouds generation [default: true]
+    B:Enabled=true
+
+    # Spawn height of clouds [range: 0 ~ 255, default: 212]
+    I:Height=212
+
+    # Maximum biome rainfall to generate clouds [range: 0.0 ~ 1.0, default: 1.0]
+    S:"Rainfall Max"=1.0
+
+    # Minimum biome rainfall to generate clouds [range: 0.0 ~ 1.0, default: 0.4]
+    S:"Rainfall Min"=0.4
+
+    # Spawn range of clouds [range: 0 ~ 255, default: 13]
+    I:Range=13
+
+    # Spawn rarity of clouds [range: 0 ~ 100, default: 10]
+    I:Rarity=10
+}
+
+

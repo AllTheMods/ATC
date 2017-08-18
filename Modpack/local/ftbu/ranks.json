@@ -7,10 +7,13 @@
     "player": {
       "parent": "builtin_player",
       "permissions": [],
-      "config": {}
+      "config": {
+        "ftbu.chunkloader.max_chunks": 18
+      }
     },
     "op": {
       "parent": "builtin_op",
+      "syntax": "<&2$name&r> ",
       "permissions": [],
       "config": {}
     },
@@ -18,12 +21,9 @@
       "parent": "builtin_op",
       "syntax": "<&6$name&r> ",
       "permissions": [],
-      "config": {}
-    },
-    "gefailter71": {
-      "parent": "staff",
-      "permissions": [],
-      "config": {}
+      "config": {
+        "ftbu.chunkloader.max_chunks": 25
+      }
     }
   }
 }

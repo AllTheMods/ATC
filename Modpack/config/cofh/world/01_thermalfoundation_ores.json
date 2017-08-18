@@ -76,6 +76,7 @@
 			}
 		},
 		"lead": {
+			"enabled": "false",
 			"distribution": "uniform",
 			"generator": {
 				"block": [

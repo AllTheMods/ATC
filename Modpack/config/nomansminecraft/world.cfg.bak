@@ -1,0 +1,215 @@
+# Configuration file
+
+~CONFIG_VERSION: 1.0.0
+
+worldgen {
+
+    ores {
+        # Enable copper in world generation
+        B:copper=true
+
+        # Enable lead in world generation
+        B:lead=true
+
+        # Enable mithril in world generation
+        B:mithril=true
+
+        # Enable nickel in world generation
+        B:nickel=true
+
+        # Enable platinum in world generation
+        B:platinum=true
+
+        # Enable silver in world generation
+        B:silver=true
+
+        # Enable tin in world generation
+        B:tin=true
+
+        copper {
+            # Number of times that copper will attempt to generate in each chunk
+            I:"Chunk Occurrence"=20
+
+            # Either 'blacklist' or 'whitelist'
+            S:"Dimension Restriction"=blacklist
+
+            # Dimension numbers for restriction
+            I:Dimensions <
+                -1
+                1
+             >
+
+            # Maximum Y-level that copper will spawn at
+            I:"Max Height"=75
+
+            # Minimum Y-level that copper will spawn at
+            I:"Min Height"=10
+
+            # Size of copper veins
+            I:"Vein Size"=10
+
+            # Percent chance that copper will generate for each chunk occurrence
+            I:Weight=40
+        }
+
+        tin {
+            # Number of times that tin will attempt to generate in each chunk
+            I:"Chunk Occurrence"=20
+
+            # Either 'blacklist' or 'whitelist'
+            S:"Dimension Restriction"=blacklist
+
+            # Dimension numbers for restriction
+            I:Dimensions <
+                -1
+                1
+             >
+
+            # Maximum Y-level that tin will spawn at
+            I:"Max Height"=55
+
+            # Minimum Y-level that tin will spawn at
+            I:"Min Height"=20
+
+            # Size of tin veins
+            I:"Vein Size"=10
+
+            # Percent chance that tin will generate for each chunk occurrence
+            I:Weight=40
+        }
+
+        silver {
+            # Number of times that silver will attempt to generate in each chunk
+            I:"Chunk Occurrence"=20
+
+            # Either 'blacklist' or 'whitelist'
+            S:"Dimension Restriction"=blacklist
+
+            # Dimension numbers for restriction
+            I:Dimensions <
+                -1
+                1
+             >
+
+            # Maximum Y-level that silver will spawn at
+            I:"Max Height"=30
+
+            # Minimum Y-level that silver will spawn at
+            I:"Min Height"=5
+
+            # Size of silver veins
+            I:"Vein Size"=8
+
+            # Percent chance that silver will generate for each chunk occurrence
+            I:Weight=20
+        }
+
+        lead {
+            # Number of times that lead will attempt to generate in each chunk
+            I:"Chunk Occurrence"=20
+
+            # Either 'blacklist' or 'whitelist'
+            S:"Dimension Restriction"=blacklist
+
+            # Dimension numbers for restriction
+            I:Dimensions <
+                -1
+                1
+             >
+
+            # Maximum Y-level that lead will spawn at
+            I:"Max Height"=35
+
+            # Minimum Y-level that lead will spawn at
+            I:"Min Height"=10
+
+            # Size of lead veins
+            I:"Vein Size"=8
+
+            # Percent chance that lead will generate for each chunk occurrence
+            I:Weight=20
+        }
+
+        nickel {
+            # Number of times that nickel will attempt to generate in each chunk
+            I:"Chunk Occurrence"=20
+
+            # Either 'blacklist' or 'whitelist'
+            S:"Dimension Restriction"=blacklist
+
+            # Dimension numbers for restriction
+            I:Dimensions <
+                -1
+                1
+             >
+
+            # Maximum Y-level that nickel will spawn at
+            I:"Max Height"=60
+
+            # Minimum Y-level that nickel will spawn at
+            I:"Min Height"=5
+
+            # Size of nickel veins
+            I:"Vein Size"=4
+
+            # Percent chance that nickel will generate for each chunk occurrence
+            I:Weight=20
+        }
+
+        platinum {
+            # Number of times that platinum will attempt to generate in each chunk
+            I:"Chunk Occurrence"=20
+
+            # Either 'blacklist' or 'whitelist'
+            S:"Dimension Restriction"=blacklist
+
+            # Dimension numbers for restriction
+            I:Dimensions <
+                -1
+                1
+             >
+
+            # Maximum Y-level that platinum will spawn at
+            I:"Max Height"=55
+
+            # Minimum Y-level that platinum will spawn at
+            I:"Min Height"=20
+
+            # Size of platinum veins
+            I:"Vein Size"=10
+
+            # Percent chance that platinum will generate for each chunk occurrence
+            I:Weight=40
+        }
+
+        mithril {
+            # Number of times that mithril will attempt to generate in each chunk
+            I:"Chunk Occurrence"=20
+
+            # Either 'blacklist' or 'whitelist'
+            S:"Dimension Restriction"=blacklist
+
+            # Dimension numbers for restriction
+            I:Dimensions <
+                -1
+                1
+             >
+
+            # Maximum Y-level that mithril will spawn at
+            I:"Max Height"=55
+
+            # Minimum Y-level that mithril will spawn at
+            I:"Min Height"=20
+
+            # Size of mithril veins
+            I:"Vein Size"=10
+
+            # Percent chance that mithril will generate for each chunk occurrence
+            I:Weight=40
+        }
+
+    }
+
+}
+
+

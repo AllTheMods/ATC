@@ -1,0 +1,71 @@
+{
+    "dimensions": [
+        {
+            "dim": 6,
+            "override": true,
+			"dimensiontype":
+            {
+                "id": 6,
+                "name": "Mining Dimension",
+                "suffix": "_dim6",
+                "keeploaded": false,
+                "worldprovider": "WorldProviderSurfaceJED"
+            },
+            "worldinfo": {
+                "JED": {
+                    "CloudHeight:": 222,
+                    "CustomDayCycle": false,
+					"CanRespawnHere": false
+                },
+                "DayTime": 18000,
+                "Difficulty": 3,
+				"BorderCenterX": 0,
+				"BorderCenterZ": 0,
+				"BorderSize": 16368,
+                "GameRules": {
+                    "doDaylightCycle": false
+                }
+            }
+        },
+        {
+            "dim": -6,
+            "override": true,
+			"dimensiontype":
+            {
+                "id": -6,
+                "name": "Nether Mining Dimension",
+                "suffix": "_dim-6",
+                "keeploaded": false,
+                "worldprovider": "WorldProviderHellJED"
+            },
+			"worldinfo": {
+                "JED": {
+                    "CustomDayCycle": false,
+					"CanRespawnHere": false
+                },
+                "Difficulty": 3,
+				"BorderCenterX": 0,
+				"BorderCenterZ": 0,
+				"BorderSize": 16368,
+                "GameRules": {
+                    "doDaylightCycle": false
+                }
+            }
+        },
+        {
+            "dim": 1,
+			"worldinfo": {
+                "JED": {
+                    "CustomDayCycle": false,
+					"CanRespawnHere": false
+                },
+				"BorderCenterX": 0,
+				"BorderCenterZ": 0,
+				"BorderSize": 211000,
+                "GameRules": {
+                    "doDaylightCycle": false
+                }
+            }
+        }
+    ]
+}

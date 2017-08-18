@@ -17,7 +17,7 @@ print(" ================================================== ");
 //
 val dracoCap = <draconicevolution:draconium_capacitor:1>.withTag({Energy: 256000000});
 val fusionCoil = <techreborn:fusion_coil>;
-val opinium = <extrautils2:opinium:8>;
+val opinium = fusionCoil; //<extrautils2:opinium:8>;
 val dracoReactor = <draconicevolution:reactor_core>;
 val inflictGem = <embers:inflictor_gem>;
 val energyCore = <overloaded:energy_core>;

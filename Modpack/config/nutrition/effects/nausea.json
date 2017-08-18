@@ -1,0 +1,11 @@
+{
+	"name": "sugarcoma",
+	"potion": "minecraft:nausea",
+	"amplifier": 0,
+	"minimum": 95,
+	"maximum": 100,
+	"detect": "any",
+	"nutrients": ["sugar"],
+	"cumulative_modifier": 1,
+	"enabled": true
+}

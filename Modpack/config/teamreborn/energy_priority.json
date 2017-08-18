@@ -1,5 +1,5 @@
 {
-  "euPriority": 0,
+  "euPriority": 1,
   "teslaPriority": 2,
-  "forgePriority": 1
+  "forgePriority": 0
 }

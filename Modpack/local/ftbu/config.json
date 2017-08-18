@@ -21,7 +21,7 @@
     "back": true,
     "server_info": true,
     "spawn": true,
-    "loaded_chunks": false,
+    "loaded_chunks": true,
     "home": true,
     "kickme": true,
     "set_hour": true
@@ -106,8 +106,8 @@
     "restart_timer": 8.0
   },
   "world": {
-    "chunk_loading": false,
-    "log_chunkloading": false,
+    "chunk_loading": true,
+    "log_chunkloading": true,
     "chunk_claiming": true,
     "safe_spawn": false,
     "spawn_area_in_sp": false
@@ -120,8 +120,8 @@
   "login": {
     "motd": [
       "",
-      "Overloaded mod added with some super-endgame recipes for something to keep from getting bored",
-      "Also, Veinminer configs tweaked, feel free to try it again and give some feedback.",
+      "",
+      "",
       ""
     ],
     "enable_motd": true,
