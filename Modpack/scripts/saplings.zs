@@ -14,7 +14,6 @@ Saplings added to oredict in oredict_wood.zs
 */
 
 //====== Rainbow Oak Sapling Recipe ======
-// Ord
 //
     recipes.addShaped("crtrainboak", <rainboaks:rainboak_sapling>, [
         [<ore:dye>, <ore:dye>, <ore:dye>],
@@ -24,7 +23,6 @@ Saplings added to oredict in oredict_wood.zs
 
 
 //====== Recipe for Simply Tea Sapling =======
-//Ordinator, 2017-AUG-13
 //
     recipes.addShapeless("crt_teasapling", <simplytea:tea_sapling> * 2,
         [<ore:cropTea>, <ore:cropTea>, <ore:treeSapling>, <ore:treeSapling>]
@@ -32,7 +30,6 @@ Saplings added to oredict in oredict_wood.zs
 
     
 //====== Lucky Beans Sapling Recipe ======
-// Ord
 //
     <ore:specialBeans>.add(<cyclicmagic:sprout_seed>);
     <ore:specialBeans>.add(<harvestcraft:jellybeansitem>);
@@ -46,7 +43,6 @@ Saplings added to oredict in oredict_wood.zs
 
 
 //====== Menril Sapling Recipe ======
-//--Ord (24-JULY-2017)
 //
     recipes.addShapedMirrored("menrilsaplingcustom", <integrateddynamics:menril_sapling>,
             [[<randomthings:runedust:9>, <randomthings:runedust:9>, <randomthings:runedust:9>],
@@ -56,7 +52,6 @@ Saplings added to oredict in oredict_wood.zs
 
         
 //====== Rubber Sapling Recipe ======
-// Ord
 //
     <ore:itemRubber>.add(<industrialforegoing:plastic>);
     <ore:materialRubber>.add(<industrialforegoing:plastic>);

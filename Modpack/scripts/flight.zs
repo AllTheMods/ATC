@@ -12,6 +12,7 @@ Balance / Equalization of methods of creative or near-creative flight
 
 */    
 
+/*
 //====== Variables ======
 //
     var NormalRing = <flyringbaublemod:flyingring>.withTag({display:{Name:"Flying Ring I",Lore:["The same ring but with", "more satisfaction woven in."]}, type: "SpecialRingNormal"});
@@ -44,3 +45,4 @@ recipes.addShaped(<draconicevolution:wyvern_chest>, [
     [<ore:blockDraconium>, <draconicevolution:wyvern_energy_core:*>, <ore:blockDraconium>]]);
 
 
+*/

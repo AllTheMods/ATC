@@ -17,7 +17,7 @@ Balance / Equalization of various auto-crafting mechanics
     <ore:basicCrafter>.add(<cyclicmagic:auto_crafter>);
     <ore:basicCrafter>.add(<structuredcrafting:structured_crafter>);
         
-        
+/*        
 //====== RFTools Crafter ======
 //
         recipes.remove(<rftools:crafter1>);
@@ -46,4 +46,4 @@ Balance / Equalization of various auto-crafting mechanics
         [<refinedstorage:processor:5>, <refinedstorage:machine_casing>, <refinedstorage:processor:5>], 
         [<refinedstorage:quartz_enriched_iron>, <ore:basicCrafter>, <refinedstorage:quartz_enriched_iron>]
         ]);
-   
+*/

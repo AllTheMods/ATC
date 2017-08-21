@@ -43,7 +43,7 @@ Balance / Equalization of various auto-miners and quarries
             [<minecraft:brick_block>, AAMiner, <minecraft:brick_block>]
             ]);
     
-    
+    /*
     //RFTmachine block tweak
     recipes.remove(<rftools:machine_frame>);
     recipes.addShapedMirrored(<rftools:machine_frame>, [
@@ -51,7 +51,7 @@ Balance / Equalization of various auto-miners and quarries
         [<ore:dustGold>, <ore:circuitBasic>, <ore:dustGold>],
         [<ore:plateIron>, <forestry:thermionic_tubes>, <ore:plateIron>]
         ]);
-        
+    */    
 
         
         

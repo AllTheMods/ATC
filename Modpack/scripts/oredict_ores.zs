@@ -8,10 +8,9 @@ print(" =================== ATC OreDict (ores) =================== ");
 print(" ========================================================== ");
 
 //====== Unify ores into oredicts =======
-// Made by Ordinator 2017-JUL-08
 
 
-    //SILVER-
+    //SILVER
     <ore:oreSilver>.addItems([    
         <thermalfoundation:ore:2>,
         <techreborn:ore:13>,
@@ -22,7 +21,7 @@ print(" ========================================================== ");
     recipes.addShapeless("silverconvert", <thermalfoundation:ore:2>*2, [<ore:oreSilver>, <ore:oreSilver>]);
 
     
-    //TIN-
+    //TIN
     <ore:oreTin>.addItems([    
         <forestry:resources:2>,
         <thermalfoundation:ore:1>,
@@ -34,7 +33,7 @@ print(" ========================================================== ");
     recipes.addShapeless("tinconvert", <thermalfoundation:ore:1>*2, [<ore:oreTin>, <ore:oreTin>]);
 
     
-    //COPPER-
+    //COPPER
     <ore:oreCopper>.addItems([    
         <forestry:resources:1>,
         <thermalfoundation:ore>,
@@ -48,7 +47,7 @@ print(" ========================================================== ");
     recipes.addShapeless("copperconvert", <thermalfoundation:ore>*2, [<ore:oreCopper>, <ore:oreCopper>]);
 
     
-    //LEAD-
+    //LEAD
     <ore:oreLead>.addItems([    
         <thermalfoundation:ore:3>,
         <techreborn:ore:12>,
@@ -58,8 +57,17 @@ print(" ========================================================== ");
         ]);
     recipes.addShapeless("leadconvert", <thermalfoundation:ore:3>*2, [<ore:oreLead>, <ore:oreLead>]);
 
+
+    //GALENA
+    <ore:oreGalena>.addItems([
+        <magneticraft:ores:1>,
+        <techreborn:ore:0>
+        ]);
+    recipes.addShapeless("galenaconvert", <magneticraft:ores:1>*2, [<ore:oreGalena>, <ore:oreGalena>]);
+    mods.thermalexpansion.Crucible.addRecipe(<liquid:lead>.withAmount(288), <techreborn:dust:23>, 2000);
     
-    //NICKEL-
+    
+    //NICKEL
     <ore:oreNickel>.addItems([    
         <thermalfoundation:ore:5>,
         <immersiveengineering:ore:4>,
@@ -69,14 +77,15 @@ print(" ========================================================== ");
     recipes.addShapeless("nickelconvert", <thermalfoundation:ore:5>*2, [<ore:oreNickel>, <ore:oreNickel>]);
 
 
-    //BAUXITE ****
+    //BAUXITE
     <ore:oreBauxite>.addItems([ 
-        <techreborn:ore:4>
+        <techreborn:ore:4>,
+        <immersiveengineering:ore:1>
         ]);
     recipes.addShapeless("bauxiteconvert", <techreborn:ore:4>*2, [<ore:oreBauxite>, <ore:oreBauxite>]);
     
     
-    //ALUMINUM-
+    //ALUMINUM
     <ore:oreAluminum>.addItems([    
         <thermalfoundation:ore:4>,
         <immersiveengineering:ore:1>,
@@ -85,7 +94,7 @@ print(" ========================================================== ");
     recipes.addShapeless("aluminumconvert", <thermalfoundation:ore:4>*2, [<ore:oreAluminum>, <ore:oreAluminum>]);
     
     
-    //IRIDIUM ****
+    //IRIDIUM
     <ore:oreIridium>.addItems([    
         <techreborn:ore:1>,
         <thermalfoundation:ore:7>
@@ -145,7 +154,7 @@ print(" ========================================================== ");
     recipes.addShapeless("dimensionalconvert", <rftools:dimensional_shard_ore>*2, [<ore:oreDimensional>, <ore:oreDimensional>]);
 
     
-    //URANIUM/YELLORIUM-
+    //URANIUM/YELLORIUM
     var uraniumOres = [
         <bigreactors:brore>,
         <immersiveengineering:ore:5>

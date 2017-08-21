@@ -470,6 +470,7 @@
       ],
       "blocklist": [
         "actuallyadditions:block_misc/3",
+		"evilcraft:dark_ore/0",
         "appliedenergistics2:charged_quartz_ore/0",
         "appliedenergistics2:quartz_ore/0",
         "astralsorcery:blockcustomore/1",
@@ -797,7 +798,8 @@
       ],
       "blocklist": [
         "minecraft:clay",
-        "minecraft:gravel"
+        "minecraft:gravel",
+		"minecraft:sand"
       ]
     }
   }

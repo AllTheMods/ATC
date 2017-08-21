@@ -7,12 +7,10 @@ import crafttweaker.oredict.IOreDictEntry;
 //====== Variables ======
 //
     var planks = <ore:plankWood>;
-    var strings = <ore:string>;
-    var cobweb = <minecraft:web>;
-    var marble = <ore:stoneMarble>;
     val logs = <ore:logWood>;
     val sticks = <ore:stickWood>;
 
+    /*
     //Magneticraft Sluice
     var MnCChunkIron     = <magneticraft:chunks:0>;  //  Iron
     var MnCChunkGold     = <magneticraft:chunks:1>;  //  Gold
@@ -110,7 +108,8 @@ import crafttweaker.oredict.IOreDictEntry;
     var lDawnstone = <liquid:dawnstone>.withAmount(144);
     var lCyanite = <liquid:cyanite>.withAmount(144);
     var lMenril = <liquid:menrilresin>.withAmount(144);
-
+    
+    */
 
 
 //====== Removing Chunkloaders ======
@@ -120,22 +119,19 @@ import crafttweaker.oredict.IOreDictEntry;
     recipes.remove(<stevescarts:cartmodule:49>);
 
 
-
-
 //====== Draconic Evo ======
 // Ord
 //    
+    /*
     recipes.remove(<draconicevolution:draconic_core>);
     recipes.addShaped(<draconicevolution:draconic_core>, [
         [<draconicevolution:draconium_ingot>, <magneticraft:chunks:1>, <draconicevolution:draconium_ingot>], 
         [<magneticraft:chunks:1>, <ore:astralGemCrystals>, <magneticraft:chunks:1>], 
         [<draconicevolution:draconium_ingot>, <magneticraft:chunks:1>, <draconicevolution:draconium_ingot>]
         ]);
-    
+    */
 
 
-   
-    
 //====== Skyblocks crafting recipe ======
 //--Ord (12-JULY-2017)
 //
@@ -146,29 +142,23 @@ import crafttweaker.oredict.IOreDictEntry;
          [<chisel:cloud:*>, <chisel:cloud:*>, <chisel:cloud:*>]]
     );
 
-   
 
-        
-    
 //====== Blaze Rod Burn Times ======
-//--Ord (21-JULY-2017)
 //
     //Buff blaze rods to 16 "items" smelt time (up from 12)
     furnace.setFuel(<minecraft:blaze_rod>, 3200);
-
     //Add burn time for blaze lantern - 64 items
     furnace.setFuel(<quark:blaze_lantern>, 12800);
 
 
-
-//No easy steel rod recipe
-    recipes.removeShaped(ImmersiveSteelRod);
-
-
-    
-//====== Actually Additions Tweaks
-// Ord
+//====== No easy steel rod recipe ======
 //
+    recipes.removeShaped(<immersiveengineering:material:2>);
+
+
+//====== Actually Additions Tweaks ======
+//
+    /*
     //Wood casing
     recipes.remove(AAWoodCasing);
     recipes.addShapedMirrored("crtwoodcasing", AAWoodCasing, [
@@ -203,10 +193,10 @@ import crafttweaker.oredict.IOreDictEntry;
         [AADoubleBatt, <actuallyadditions:block_display_stand>, AADoubleBatt],
         [<ore:blockBattery>, <ore:circuitAdvanced>, <ore:blockBattery>]
         ]);
+    */
     
 
 //====== Spike Mod Qty Adjust ======
-// Ord
 //
     recipes.remove(<spikemod:wooden_spike>);
     recipes.addShaped(<spikemod:wooden_spike>, [
@@ -251,14 +241,12 @@ import crafttweaker.oredict.IOreDictEntry;
         ]);
 
 
-
 //====== No Easy Steel ======
 //    
     furnace.remove(<ore:ingotSteel>);
 
 
 //====== Glider Not Sided (QoL) ======
-// Ord 
 //
     recipes.remove(<openglider:hang_glider_basic>);
     <ore:gliderWings>.add(<openglider:hang_glider_part:0>);
@@ -268,16 +256,17 @@ import crafttweaker.oredict.IOreDictEntry;
         ]);
         
 
-
 //====== Mek plastic needs TR and IF ======
 // This was intended to be used as a "difficult" gate to get rubber/silicone seeds
 //
+    /*
     recipes.remove(<mekanism:plasticblock:*>);
     recipes.addShapedMirrored("crtplasticblock", <mekanism:plasticblock:0>, [
         [<mekanism:polyethene>, <industrialforegoing:plastic>, <mekanism:polyethene>],
         [<industrialforegoing:plastic>, <techreborn:part:32>, <industrialforegoing:plastic>],
         [<mekanism:polyethene>, <industrialforegoing:plastic>, <mekanism:polyethene>]
         ]);
+    */
 
 
 //EOF

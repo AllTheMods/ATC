@@ -17,6 +17,7 @@ creative-only recipes.
 
 */    
 
+/*
 //====== Variables ======
 //
     var RTFertileDirt = <randomthings:fertilizeddirt>;
@@ -43,7 +44,6 @@ creative-only recipes.
 
 
 //====== Attained Drops Tuning ======
-// Ord (13-AUG-2017)
 //
 
     recipes.remove(AttainSeed);
@@ -62,7 +62,6 @@ creative-only recipes.
 
 
 //====== Nerf Cloche ======
-// Ord (13-AUG-2017)
 //    
     recipes.remove(Cloche);
     recipes.addShaped("crtcloche", Cloche, [
@@ -73,7 +72,6 @@ creative-only recipes.
 
     
 //====== Growable Cells ======
-// Ord
 //
     recipes.remove(<growablecells:seedr1k>);
     recipes.addShapedMirrored(<growablecells:seedr1k>, [
@@ -81,5 +79,6 @@ creative-only recipes.
         [<refinedstorage:storage_disk:1>, <ore:creativeATMStar>, <refinedstorage:storage_disk:1>],
         [<refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>]
         ]);
-    
+
+*/
     
