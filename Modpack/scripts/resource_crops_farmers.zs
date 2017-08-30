@@ -17,7 +17,7 @@ creative-only recipes.
 
 */    
 
-/*
+
 //====== Variables ======
 //
     var RTFertileDirt = <randomthings:fertilizeddirt>;
@@ -80,5 +80,4 @@ creative-only recipes.
         [<refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>, <refinedstorage:storage_disk:1>]
         ]);
 
-*/
     

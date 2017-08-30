@@ -91,7 +91,7 @@ print(" ======================================================== ");
     recipes.remove(<nmmlib:gear:10>);
     recipes.remove(<nmmlib:gear:11>);
     recipes.remove(<nmmlib:gear:12>);
-    // recipes.remove(<nmmlib:gear:13>); // wood gear
+    recipes.remove(<nmmlib:gear:13>); // wood gear
     recipes.remove(<nmmlib:gear:14>);
     recipes.remove(<nmmlib:gear:15>);
     recipes.remove(<nmmlib:gear:16>);
@@ -208,6 +208,16 @@ print(" ======================================================== ");
          [        null,             <minecraft:iron_bars>,         null         ]]
     );
 
+	
+//====== Wood Gear ======
+//
+	recipes.addShaped(<nmmlib:gear:13>, [
+		[null, <ore:stickWood>, null],
+		[<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
+		[null, <ore:stickWood>, null]
+	]);
+	
+	
 
 //====== Constantan Grit ======
 // Thermal vs Immersive conflict

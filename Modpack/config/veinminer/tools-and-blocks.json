@@ -237,6 +237,8 @@
         "natura:overworld_logs2",
         "natura:redwood_leaves",
         "natura:redwood_logs",
+        "plants2:nether_leaves",
+        "plants2:nether_log",
         "rainboaks:rainboak_leaves",
         "rainboaks:rainboak_log",
         "randomthings:spectreleaf/0",
@@ -470,7 +472,6 @@
       ],
       "blocklist": [
         "actuallyadditions:block_misc/3",
-		"evilcraft:dark_ore/0",
         "appliedenergistics2:charged_quartz_ore/0",
         "appliedenergistics2:quartz_ore/0",
         "astralsorcery:blockcustomore/1",
@@ -703,6 +704,7 @@
         "natura:overworld_leaves",
         "natura:overworld_leaves2",
         "natura:redwood_leaves",
+        "plants2:nether_leaves",
         "rainboaks:rainboak_leaves",
         "randomthings:spectreleaf/0",
         "rustic:leaves/8",
@@ -799,7 +801,7 @@
       "blocklist": [
         "minecraft:clay",
         "minecraft:gravel",
-		"minecraft:sand"
+        "minecraft:sand"
       ]
     }
   }
